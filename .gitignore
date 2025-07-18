@@ -1,37 +1,49 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# Node modules
 node_modules/
 
-# Expo
+# Expo / React Native build artifacts and caches
 .expo/
-dist/
-web-build/
-expo-env.d.ts
+.eslintcache
+.yarn/
+.pnp/
+.pnp.cjs
+.pnp.mjs
+.bin/
+android/.idea/
+android/build/
+android/.gradle/
+android/app/build/
+android/gradle/
+ios/build/
+ios/*.xcworkspace/
+ios/*.xcodeproj/project.xcworkspace/
+ios/*.xcarchive/
+ios/.xcode.env.local
+ios/*.ipa
+ios/*.xcplaygrounddata/
+ios/*.xccheckout/
+ios/*.xcscmblueprint/
+ios/*.xcsettings/
+ios/*.xcscheme
+ios/*.xcuserstate
+ios/*.xcbkptlist
+ios/*.dSYM
+ios/*.app/
 
-# Native
-.kotlin/
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
+# IDE and system files
+.vscode/           # VS Code specific files (optional, depends on preference)
+.DS_Store          # macOS specific files
+npm-debug.log* # npm debug logs
+yarn-debug.log* # Yarn debug logs (even if using npm, might appear)
+yarn-error.log*
+.yarn-integrity
+*.log
+*.bak
+*.tmp
+*.swp
+*.swo
+Thumbs.db
 
-# Metro
-.metro-health-check*
-
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
-.DS_Store
-*.pem
-
-# local env files
-.env*.local
-
-# typescript
-*.tsbuildinfo
+# Environment variables
+.env
+.env.local
